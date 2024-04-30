@@ -1,0 +1,19 @@
+services:
+  db:
+    image: mariadb
+    environment:
+    - MARIADB_RANDOM_ROOT_PASSWORD=1
+    - MARIADB_DATABASE=ezxss
+    - MARIADB_USER=ezxss
+    - MARIADB_PASSWORD=ezxss
+  ezxss:
+    # image: ghcr.io/gadgetmg/ezxss:master
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    ports:
+    - 8080:8080
+    environment:
+    - EZXSS_DBHOST=db
+    - EZXSS_DBUSER=ezxss
+    - EZXSS_DBPASSWORD=ezxss
