@@ -1,6 +1,6 @@
 services:
   db:
-    image: mariadb
+    image: mariadb@sha256:0a620383fe05d20b3cc7510ebccc6749f83f1b0f97f3030d10dd2fa199371f07
     environment:
     - MARIADB_RANDOM_ROOT_PASSWORD=1
     - MARIADB_DATABASE=ezxss
