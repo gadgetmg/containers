@@ -47,7 +47,7 @@ jobs:
         password: ${{ github.token }}
     -
       name: Build and push
-      uses: docker/bake-action@b6c9154dfe9d7d13a18682f109fa5262a0a49d44 # v5
+      uses: docker/bake-action@60f5d53310314dbf8c33f0c8a01042536f2f6c36 # v6
       with:
         workdir: ${{ matrix.image }}
         push: ${{ github.event_name != 'pull_request' && github.actor != 'nektos/act' }}
