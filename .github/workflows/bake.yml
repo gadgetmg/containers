@@ -16,7 +16,7 @@ jobs:
     -
       uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
     - 
-      uses: tj-actions/changed-files@4edd678ac3f81e2dc578756871e4d00c19191daf # v45
+      uses: tj-actions/changed-files@d6e91a2266cdb9d62096cebf1e8546899c6aa18f # v45
       id: changed-files
       with:
         dir_names: true
