@@ -6,7 +6,7 @@
     ":automergeAll"
   ],
   "ignorePaths": [
-    "**/examples/**"
+    "**/example/**"
   ],
   "ignoreTests": true
 }
