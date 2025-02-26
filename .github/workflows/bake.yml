@@ -47,7 +47,7 @@ jobs:
         password: ${{ github.token }}
     -
       name: Build and push
-      uses: docker/bake-action@4f08b22a19b3133912e9acbf7da9bfa25184a173 # v6
+      uses: docker/bake-action@4ba453fbc2db7735392b93edf935aaf9b1e8f747 # v6
       with:
         source: .
         workdir: ${{ matrix.image }}
