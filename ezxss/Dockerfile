@@ -1,4 +1,4 @@
-FROM php:8.5.2-apache-bookworm@sha256:682b3ed301fac4584c3ebd7894775f1ee467d54bed98db5e01ce74e8dbd084c3
+FROM php:8.5.2-apache-bookworm@sha256:1efc979dff3348daf29dc5f6c77198c4ef8d9b92a5ac419810cdf00fc61df521
 
 # Install mysql PHP extension
 # Use production PHP config
