@@ -49,7 +49,6 @@ jobs:
       name: Build and push
       uses: docker/bake-action@59cb1203cd42bcefd40a1b6d73b589e48c86040e # v7
       with:
-        source: .
-        workdir: ${{ matrix.image }}
+        source: ${{ matrix.image }}
         push: ${{ github.event_name != 'pull_request' && github.actor != 'nektos/act' }}
         provenance: false
