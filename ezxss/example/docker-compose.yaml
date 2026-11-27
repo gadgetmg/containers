@@ -7,7 +7,6 @@ services:
     - MARIADB_USER=ezxss
     - MARIADB_PASSWORD=ezxss
   ezxss:
-    # image: ghcr.io/gadgetmg/ezxss:master
     build:
       context: ..
       dockerfile: Dockerfile
